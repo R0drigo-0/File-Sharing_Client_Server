@@ -1,0 +1,22 @@
+#This 15 a sample torrent file 
+# File hash ( you can obtain it with the following command: sha256sum test_file)  
+07100096f4869dafd8aad313eda47d2f49f130f9f85042001bf2af3d5b2efb26
+#File size
+196585 
+#Peer count
+3
+# Block hashes ...
+
+# Hash #1 // head -c 65536 test_file | sha256sum 
+6a1fc46a219a5e0658ed8f6d8a77d753d504415fe01d1fecd30f9f66700eeb73
+
+# Hash #2 // tail -c +65537 test_file | head -c 65536 | sha256sum 
+b8bc5dbbaa6aa511cc0ff9bacf700ce9de4ade5ab4ef2a0d7ba8011eb2c9d964
+
+#Hash #3 // tail - +131073 test_file | head -c 65536 | sha256sum   
+bee949e1172e552e7d83dc933c33fdbc50c19ff6f67c77e415e0bb5192d5947d
+
+# Peers 
+localhost:8080
+127.0.0.1:8081
+127.0.0.1:8082
